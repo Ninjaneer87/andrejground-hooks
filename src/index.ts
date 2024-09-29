@@ -1,1 +1,1 @@
-export { useSlidingBox } from './hooks/useSlidingBox';
+export { useSlidingBox } from './hooks/useSlidingBox/index.js';

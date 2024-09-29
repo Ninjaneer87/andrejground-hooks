@@ -3,8 +3,8 @@ import {
   useRef,
   useState,
   useCallback,
-  CSSProperties,
-  MutableRefObject,
+  type CSSProperties,
+  type MutableRefObject,
 } from 'react';
 
 type ListItems<T> = { [key: PropertyKey]: T };
