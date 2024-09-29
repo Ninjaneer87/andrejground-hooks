@@ -29,7 +29,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b",
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --write .",
