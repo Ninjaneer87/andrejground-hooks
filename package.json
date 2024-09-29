@@ -36,7 +36,7 @@
     "check-format": "prettier --check .",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "ci": "npm run build && npm run lint && npm run check-format && npm run check-exports",
-    "local-release": "changesets version && changesets publish",
+    "local-release": "changeset version && changeset publish",
     "prepublishOnly": "npm run ci"
   },
   "dependencies": {
