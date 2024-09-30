@@ -9,7 +9,6 @@ import type { BoxPosition } from '../../index.js';
 
 type ListItems<T> = { [key: PropertyKey]: T };
 
-
 const initialBoxPosition: BoxPosition = {
   '--x': '0px',
   '--y': '0px',
