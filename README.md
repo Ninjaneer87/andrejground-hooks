@@ -16,7 +16,7 @@ npm install @andrejground/hooks --save
 
 [![StackBlitz demo](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/andrejground-react-sliding-box?file=src%2Fcomponents%2FList.tsx,src%2Fhooks%2FuseActiveBoxPosition.ts)
 
-[Full guide](https://andrejground.com/articles/sliding-box-over-the-active-item)
+<a href="https://andrejground.com/articles/sliding-box-over-the-active-item" target="_blank">Full guide &#8599;</a>
 
 #### Usage
 
@@ -99,7 +99,7 @@ const { listItemsRef, activeBoxPosition } = useActiveBoxPosition({
 
 Options argument in the `useActiveBoxPosition` hook
 
-- `activeItem` | `string | null | undefined` | 	A unique value representing active item in the list
+- `activeItem` | `string | null | undefined` | A unique value representing active item in the list
 
 - `recalculate` | `unknown[]` | The hook will observe this array and will recalculate all list elements' positions when ever any of the array items change
 
@@ -107,6 +107,6 @@ Options argument in the `useActiveBoxPosition` hook
 
 `useActiveBoxPosition` hook returns the object with
 
-- `listItemsRef` | `{ [key: PropertyKey]: HTMLElement }` | 	Ref containing an array of all the elements in the list
+- `listItemsRef` | `{ [key: PropertyKey]: HTMLElement }` | Ref containing an array of all the elements in the list
 
 - `activeBoxPosition` | `CSSProperties` | The object containing the CSS (variables) properties of the active item: `--x`, `--y`, `--width`, `--height`
