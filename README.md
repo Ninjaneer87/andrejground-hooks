@@ -99,14 +99,14 @@ const { listItemsRef, activeBoxPosition } = useActiveBoxPosition({
 
 Options argument in the `useActiveBoxPosition` hook
 
-`activeItem` | `string | null | undefined` | 	A unique value representing active item in the list
+- `activeItem` | `string | null | undefined` | 	A unique value representing active item in the list
 
-`recalculate` | `unknown[]` | The hook will observe this array and will recalculate all list elements' positions when ever any of the array items change
+- `recalculate` | `unknown[]` | The hook will observe this array and will recalculate all list elements' positions when ever any of the array items change
 
 ##### Returns
 
 `useActiveBoxPosition` hook returns the object with
 
-`listItemsRef` | `{ [key: PropertyKey]: HTMLElement }` | 	Ref containing an array of all the elements in the list
+- `listItemsRef` | `{ [key: PropertyKey]: HTMLElement }` | 	Ref containing an array of all the elements in the list
 
-`activeBoxPosition` | `CSSProperties` | The object containing the CSS (variables) properties of the active item: `--x`, `--y`, `--width`, `--height`
+- `activeBoxPosition` | `CSSProperties` | The object containing the CSS (variables) properties of the active item: `--x`, `--y`, `--width`, `--height`
