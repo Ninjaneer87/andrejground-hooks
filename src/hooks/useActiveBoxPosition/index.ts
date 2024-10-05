@@ -39,7 +39,7 @@ export function useActiveBoxPosition<ItemElement extends HTMLElement>({
   recalculate = [],
 }: {
   /** A unique value representing active item in the list. */
-  activeItem: string | null | undefined;
+  activeItem: PropertyKey | null | undefined;
 
   /** Will recalculate (and map) all list elements' sizes and positions when ever any of these values change.
    *
@@ -54,7 +54,7 @@ export function useActiveBoxPosition<ItemElement extends HTMLElement>({
     useRef({});
 
   const setPosition = useCallback(() => {
-    if (!activeItem) return;
+    if (activeItem === null || activeItem === undefined) return;
 
     const activeItemPosition = listItemsPositionsRef.current[activeItem];
     if (!activeItemPosition) return;
