@@ -10,7 +10,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "description": "Not everyday React hooks",
+  "description": "No ordinary React hooks",
   "keywords": [
     "react",
     "react hooks",
@@ -18,6 +18,8 @@
     "typescript"
   ],
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "homepage": "https://github.com/Ninjaneer87/andrejground-hooks",
   "bugs": {
     "url": "https://github.com/Ninjaneer87/andrejground-hooks/issues"
@@ -28,7 +30,7 @@
     "url": "git+https://github.com/Ninjaneer87/andrejground-hooks.git"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsup index.ts --format cjs,esm --dts",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
@@ -47,6 +49,7 @@
     "@types/react-dom": "^18.3.0",
     "globals": "^15.9.0",
     "prettier": "^3.3.3",
+    "tsup": "^8.3.0",
     "typescript": "^5.5.3"
   }
 }
