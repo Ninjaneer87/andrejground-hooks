@@ -25,6 +25,6 @@ jobs:
 
       - name: Publish
         id: changesets
-        uses: changesets/action@v3
+        uses: changesets/action@v1
         with:
           publish: npm run build
