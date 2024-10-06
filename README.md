@@ -15,7 +15,7 @@ npm install @andrejground/hooks --save
 ### `useActiveBoxPosition`
 
 <a href="https://stackblitz.com/edit/andrejground-react-sliding-box?file=src%2Fcomponents%2FList.tsx,src%2Fhooks%2FuseActiveBoxPosition.ts" target="_blank">Working demo &#8599;</a>
-
+<br />
 <a href="https://andrejground.com/articles/sliding-box-over-the-active-item" target="_blank">Full guide &#8599;</a>
 
 #### Usage
