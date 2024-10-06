@@ -36,7 +36,7 @@
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "ci": "pnpm run build && pnpm run check-format && pnpm run check-exports",
     "local-release": "changeset version && changeset publish",
-    "release": "pnpm run build && changeset version && changeset publish",
+    "release": "pnpm run build && changeset publish",
     "prepublishOnly": "pnpm run ci"
   },
   "dependencies": {
