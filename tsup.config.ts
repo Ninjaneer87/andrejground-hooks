@@ -9,6 +9,6 @@ export default defineConfig({
   skipNodeModulesBundle: true,
   clean: true,
   outExtension({ format }) {
-    return format === 'esm' ? { js: '.mjs' } : { js: '.cjs' };
+    return format === 'esm' ? { js: '.mjs' } : { js: '.js' };
   },
 });
