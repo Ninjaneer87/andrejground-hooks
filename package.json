@@ -20,13 +20,6 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
   "homepage": "https://github.com/Ninjaneer87/andrejground-hooks",
   "bugs": {
     "url": "https://github.com/Ninjaneer87/andrejground-hooks/issues"
@@ -37,7 +30,7 @@
     "url": "git+https://github.com/Ninjaneer87/andrejground-hooks.git"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",

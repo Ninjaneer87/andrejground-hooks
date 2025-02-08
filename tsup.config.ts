@@ -8,7 +8,4 @@ export default defineConfig({
   shims: true,
   skipNodeModulesBundle: true,
   clean: true,
-  outExtension({ format }) {
-    return format === 'esm' ? { js: '.mjs' } : { js: '.js' };
-  },
 });
