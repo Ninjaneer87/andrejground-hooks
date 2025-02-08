@@ -17,7 +17,7 @@
     "npm",
     "typescript"
   ],
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.mjs",
   "exports": {
     "import": "./dist/index.mjs",
